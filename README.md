@@ -1,101 +1,74 @@
-📰 AI-Based Multilingual Fake News Detection System
+# 📰 AI-Based Multilingual Fake News Detection System
 
-An AI-powered fake news detection system capable of identifying misinformation across multiple languages.
-The project leverages transformer-based language models and a Retrieval-Augmented Generation (RAG) pipeline to not only classify news as real or fake, but also provide supporting evidence from online sources.
+An AI-powered fake news detection system that identifies misinformation across **multiple languages** using transformer-based models and a **Retrieval-Augmented Generation (RAG)** pipeline to provide supporting evidence from online sources.
 
-🚀 Features
+---
 
-🌍 Multilingual Fake News Detection
+## 🚀 Features
 
-English news detection using DistilBERT
+- 🌍 **Multilingual Fake News Detection**
+  - English news classification using **DistilBERT**
+  - Indian language news classification using **IndicBERT**
+- 🤖 Transformer-based text classification
+- 🔎 **Retrieval-Augmented Generation (RAG) Pipeline**
+  - Retrieves evidence from online sources
+  - Supports and explains the prediction
+- 🧠 Modular and scalable architecture
+- 📊 Real-world misinformation analysis support
 
-Indian language news detection using IndicBERT
+---
 
-🤖 Transformer-based text classification
+## 🧩 System Overview
 
-🔎 RAG (Retrieval-Augmented Generation) Pipeline
+1. News article is provided as input  
+2. Language detection is performed  
+3. Model selection:
+   - English → DistilBERT
+   - Indian Languages → IndicBERT  
+4. News is classified as **Fake** or **Real**
+5. RAG pipeline retrieves online evidence
+6. Final output includes:
+   - Classification result
+   - Supporting evidence
 
-Fetches supporting evidence from online sources
+---
 
-Helps explain and justify predictions
+## 🧠 Models Used
 
-📊 Scalable and modular architecture
+### DistilBERT
+- Used for English fake news detection
+- Lightweight and efficient transformer model
+- Fine-tuned on fake news datasets
 
-🧠 Designed for real-world misinformation analysis
+### IndicBERT
+- Used for Indian languages (Hindi, Tamil, Telugu, Bengali, etc.)
+- Pretrained on large-scale Indian language corpora
+- Fine-tuned for fake news classification
 
-🧩 System Architecture
+---
 
-Input News Article
+## 🔍 Retrieval-Augmented Generation (RAG)
 
-Language Identification
+The RAG pipeline improves explainability by:
 
-Model Selection
+- Querying online sources related to the news claim
+- Retrieving relevant articles and documents
+- Generating evidence that supports or contradicts the claim
 
-English → DistilBERT
+This makes predictions more **transparent** and **trustworthy**.
 
-Indian Languages → IndicBERT
+---
 
-Fake News Classification
+## 🛠️ Tech Stack
 
-RAG Pipeline
+- Python
+- PyTorch
+- Hugging Face Transformers
+- DistilBERT
+- IndicBERT
+- FAISS / Vector Database
+- Web Search APIs
+- NLP & Machine Learning Libraries
 
-Query formulation
+---
 
-Online evidence retrieval
-
-Evidence generation
-
-Final Output
-
-Prediction (Fake / Real)
-
-Supporting evidence
-
-🧠 Models Used
-🔹 DistilBERT
-
-Used for English fake news classification
-
-Lightweight and faster variant of BERT
-
-Fine-tuned on labeled fake news datasets
-
-🔹 IndicBERT
-
-Used for Indian languages such as Hindi, Bengali, Tamil, Telugu, etc.
-
-Pretrained on large multilingual Indian corpora
-
-Fine-tuned for fake news detection
-
-🔍 Retrieval-Augmented Generation (RAG)
-
-To enhance transparency and trust, this project includes a RAG pipeline that:
-
-Searches online sources related to the news claim
-
-Retrieves relevant documents/articles
-
-Generates supporting or contradicting evidence
-
-Helps users understand why a piece of news is labeled fake or real
-
-This makes the system more explainable and fact-driven.
-
-🛠️ Tech Stack
-
-Python
-
-PyTorch
-
-Hugging Face Transformers
-
-DistilBERT
-
-IndicBERT
-
-FAISS / Vector Database (for retrieval)
-
-Web Search APIs / Scrapers (for evidence collection)
-
-NLP & ML libraries
