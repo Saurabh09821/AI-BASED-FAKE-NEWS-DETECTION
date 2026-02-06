@@ -1,0 +1,4 @@
+,0
+shape,"(26232, 33)"
+missing_fraction,"{'Fact_Check_Link': 0.0735742604452577, 'Media_Link': 0.06644556267154621, 'News Body': 0.03327996340347667, 'Eng_Trans_News_Body': 0.03324184202500762, 'Publish_Date': 0.031068923452272034, 'Region': 0.026951814577615127, 'Author_Name': 0.008653552912473316, 'News_Category': 0.000609942055504727, 'id': 0.0, 'Fact_Check_Source': 0.0, 'Eng_Trans_Statement': 0.0, 'Statement': 0.0, 'Source_Type': 0.0, 'Language': 0.0, 'Platform': 0.0, 'Text': 0.0, 'Video': 0.0, 'Image': 0.0, 'Label': 0.0}"
+duplicates_rowcount,0
